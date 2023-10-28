@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Full Stack</h2>
+		<p>Le Vinh Khang is a full-stack professional, excelling in both the front-end and back-end aspects of his work. His skills and expertise span the entire development stack, from crafting user-friendly interfaces to building robust server-side solutions. With a comprehensive understanding of various programming languages, frameworks, and technologies, Khang is well-equipped to tackle complex projects from end to end. His full-stack proficiency allows him to create seamless and integrated digital experiences that meet both user expectations and business objectives.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Industry Leader</h2>
+		<p>Le Vinh Khang is an industry leader known for his innovative and strategic approach. With a profound understanding of current trends and future trajectories, he consistently stays ahead of the curve. His expertise spans development, design, and editorial roles, making him a multifaceted professional. Khang's thought leadership and visionary insights have not only positioned him at the forefront of his field but have also significantly influenced the direction of the industry. His contributions are widely recognized and celebrated, solidifying his reputation as a trailblazer and key influencer.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Strategy-Minded</h2>
+		<p>Le Vinh Khang possesses a remarkable strategic mindset. He approaches challenges with a holistic perspective, considering both short-term objectives and long-term goals. His ability to analyze complex scenarios, identify core issues, and devise actionable plans makes him a valuable asset in decision-making processes. Khang's strategic thinking is underscored by his constant pursuit of innovation, ensuring that his solutions are not only effective but also forward-thinking. Whether in development, design, or editorial roles, his strategies consistently lead to successful outcomes.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
